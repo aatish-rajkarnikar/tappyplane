@@ -6,11 +6,11 @@ PlayerSettings:
   serializedVersion: 12
   productGUID: d1fba3e454cec481ca0a1c9491611753
   AndroidProfiler: 0
-  defaultScreenOrientation: 4
+  defaultScreenOrientation: 2
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: Aatish Rajkarnikar
   productName: TappyPlane
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
