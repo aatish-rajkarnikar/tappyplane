@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\GameCanvasManager.cs" />
+     <Compile Include="Assets\GameController.cs" />
      <Compile Include="Assets\Ground.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Plane.cs" />

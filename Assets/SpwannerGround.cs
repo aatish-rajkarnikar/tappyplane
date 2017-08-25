@@ -6,7 +6,7 @@ public class SpwannerGround : MonoBehaviour {
 
 	public GameObject ground;
 	private GameObject player;
-	public float distance = 18.55f;
+	private float distance = 8.08f;
 
 	// Use this for initialization
 	void Start () {
@@ -15,7 +15,7 @@ public class SpwannerGround : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		if (transform.position.x - player.transform.position.x < 25) {
+		if (transform.position.x - player.transform.position.x < 10) {
 			CreateGroundAndMove ();
 		}
 	}

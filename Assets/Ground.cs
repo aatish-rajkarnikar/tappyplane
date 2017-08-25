@@ -11,7 +11,7 @@ public class Ground : MonoBehaviour {
 	}
 	
 	void Update () {
-		if (transform.position.x - player.transform.position.x < -25){
+		if (transform.position.x - player.transform.position.x < -10){
 			Destroy (gameObject);
 		}
 	}

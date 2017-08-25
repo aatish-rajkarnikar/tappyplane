@@ -11,7 +11,7 @@ public class Wall : MonoBehaviour {
 	}
 
 	void Update () {
-		if (transform.position.x - player.transform.position.x < -10){
+		if (transform.position.x - player.transform.position.x < -4){
 			Destroy (gameObject);
 		}
 	}

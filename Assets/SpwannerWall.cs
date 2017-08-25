@@ -8,9 +8,9 @@ public class SpwannerWall : MonoBehaviour {
 	public GameObject downWall;
 	private GameObject player;
 
-	public float distance = 6.0f;
-	public float upWallCenter = 2.3f;
-	public float downWallCenter = -2.3f;
+	private float distance = 3.0f;
+	private float upWallCenter = 1.2f;
+	private float downWallCenter = -1.2f;
 
 
 
@@ -20,7 +20,7 @@ public class SpwannerWall : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		if (transform.position.x - player.transform.position.x < 10) {
+		if (transform.position.x - player.transform.position.x < 4) {
 			MoveAndCreateWall ();
 		}
 	}

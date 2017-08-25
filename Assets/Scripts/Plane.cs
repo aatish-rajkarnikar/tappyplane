@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Plane : MonoBehaviour {
 
-	public float speed = 2;
-	public float force = 2;
+	private float speed = 4;
+	private float force = 40;
 
 	private Rigidbody2D rb2d;
 	private bool isDead = false;
@@ -34,5 +34,15 @@ public class Plane : MonoBehaviour {
 		isStarted = true;
 		rb2d.gravityScale = 2;
 		rb2d.velocity = Vector2.right * speed;
+	}
+
+	void OnCollisionEnter2D(Collision2D coll){
+		if (!isDead) {
+			isDead = true;
+			GameObject gameController = GameObject.FindGameObjectWithTag ("GameController");
+			GameController script = gameController.GetComponent<GameController> ();
+			script.GameOver ();
+			Debug.Log ("Collided");
+		}
 	}
 }

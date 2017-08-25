@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour {
 
 	public GameObject player;
-	public float offSet = 4;
+	private float offSet = 2;
 
 	// Use this for initialization
 	void Start () {
